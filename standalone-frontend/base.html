@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+      <div class="logo">☕ Brew Bliss</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <section class="hero">
+  <h1>Welcome to Brew Bliss</h1>
+  <p>Indulge in the aromatic world of artisan coffee and organic tea blends curated just for you.</p>
+  <p>Whether you're a morning coffee enthusiast or an evening tea lover, we’ve got something special for every sip.</p>
+  <a href="#products" class="btn">Explore Our Selection</a>
+</section>
+
+
+  </header>
+
+  
+<section class="section why-us">
+  <h2>Why Choose Brew Bliss?</h2>
+  <div class="features">
+    <div class="feature-card">
+      <img src="https://img.icons8.com/ios-filled/100/coffee.png" alt="Fresh Beans">
+      <h3>Freshly Roasted</h3>
+      <p>We roast our beans fresh every week to ensure top-notch flavor and aroma.</p>
+    </div>
+    <div class="feature-card">
+      <img src="https://img.icons8.com/ios-filled/100/tea.png" alt="Organic Tea">
+      <h3>Organic Tea</h3>
+      <p>Our tea leaves are handpicked from the Himalayan foothills, ensuring natural wellness.</p>
+    </div>
+    <div class="feature-card">
+      <img src="https://img.icons8.com/ios-filled/100/sustainability.png" alt="Eco Friendly">
+      <h3>Eco-Friendly</h3>
+      <p>Sustainably sourced packaging and products because the Earth matters.</p>
+    </div>
+  </div>
+</section>
+
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>At Brew Bliss, we bring you ethically sourced, freshly roasted coffee and handpicked teas from the finest estates around the world.</p>
+  </section>
+
+    <section id="products" class="section">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="./images/cofee.jpg" alt="Coffee">
+        <h3>Signature Coffee</h3>
+        <p>Aromatic, bold, and perfectly roasted to awaken your senses.</p>
+        <button class="btn">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="./images/tea.jpg" alt="Tea">
+        <h3>Green Tea</h3>
+        <p>Refreshing, antioxidant-rich tea leaves from Himalayan gardens.</p>
+        <button class="btn">Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="section testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial">
+        <p>"Absolutely love their coffee. It's my morning bliss!"</p>
+        <strong>- Priya S.</strong>
+      </div>
+      <div class="testimonial">
+        <p>"Their tea helped me switch from soda to something healthy and tasty."</p>
+        <strong>- Raj M.</strong>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="4" placeholder="Your Message"></textarea>
+      <button class="btn">Send Message</button>
+    </form>
+  </section>
+
+<div class="container">
+  <div class="chatbox">
+    <div class="chatbox__support">
+      <div class="chatbox__header">
+        <div class="chatbox__image--header">
+          <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+        </div>
+        <div class="chatbox__content--header">
+          <h4 class="chatbox__heading--header">Chat support</h4>
+          <p class="chatbox__description--header">Hi. My name is Abhishek. How can I help you?</p>
+        </div>
+      </div>
+      <div class="chatbox__messages">
+        <div></div>
+      </div>
+      <div class="chatbox__footer">
+        <input type="text" placeholder="Write a message...">
+        <button class="chatbox__send--footer send__button">Send</button>
+      </div>
+    </div>
+    <div class="chatbox__button">
+      <button><img src="https://img.icons8.com/ios-filled/50/speech-bubble.png" /></button>
+    </div>
+  </div>
+</div>
+
+<!-- <section class="section gallery">
+  <h2>Discover the Taste</h2>
+  <div class="gallery-grid">
+    <img src="https://source.unsplash.com/400x300/?coffee-cup" alt="Coffee Cup">
+    <img src="https://source.unsplash.com/400x300/?tea-cup" alt="Tea Cup">
+    <img src="https://source.unsplash.com/400x300/?coffee-beans" alt="Coffee Beans">
+    <img src="https://source.unsplash.com/400x300/?herbal-tea" alt="Herbal Tea">
+  </div>
+</section> -->
+
+
+
+
+ <footer>
+    <p>&copy; 2025 Brew Bliss. All rights reserved.</p>
+  </footer>
+
+  <script>
+  document.querySelector('.chatbox__button button').addEventListener('click', () => {
+    document.querySelector('.chatbox').classList.toggle('active');
+  });
+</script>
+
+    <script src="./app.js"></script>
+
+</body>
+</html>
